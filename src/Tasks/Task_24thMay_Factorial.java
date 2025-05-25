@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class Task_24thMay_Factorial {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int fact = 1;
-        if( n == 0){
-            fact = 1;
+        System.out.println("Enter number for factorial:");
+        int num = scanner.nextInt();
+
+        long fact = 1;
+        for (int i = 1; i <= num; i++) {
+            if (num < 0) {
+                System.out.println("Please enter valid number for factorial");
+            } else {
+                fact = fact * i;
+            }
+
         }
-
-        for (int i = 1; i <= n ; i++) {
-            fact = fact*i;
-        }
-
-        System.out.println(fact);
-
-
+        System.out.println("Factorial=" + fact);
 
     }
 }
