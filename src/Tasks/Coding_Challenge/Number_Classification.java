@@ -8,7 +8,7 @@ package Tasks.Coding_Challenge;
 //- Print appropriate message for each case
 public class Number_Classification {
     public static void main(String[] args) {
-        int number = 15;
+        int number = -9;
 
         if (number > 0) {
             System.out.println(number + " is positive");
